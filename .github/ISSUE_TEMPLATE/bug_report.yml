@@ -1,0 +1,26 @@
+name: Bug Report
+about: Create a report to help us improve the Axiom-Loop.
+title: "[BUG] "
+labels: bug, adversarial-failure
+assignees: ''
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please provide as much detail as possible about the loop failure.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us what you expected to happen.
+      placeholder: "Example: The loop entered a stagnation state on Turn 5."
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Agent Logs
+      description: Please paste the relevant output from 'documentation/axiom_loop.log'.
+      render: shell
+    validations:
+      required: true
